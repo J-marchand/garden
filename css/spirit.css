@@ -4,6 +4,16 @@
     text-align: justify;
 }
 
+/*** IMG LEFT & RIGHT ***/
+.right img
+{
+    float: right;
+}
+.left .article
+{
+    float: right;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
 
     .container
