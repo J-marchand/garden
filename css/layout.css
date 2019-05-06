@@ -1,0 +1,242 @@
+.header_nav_1
+{
+    display: none;
+}
+
+/*******/
+h1,
+h2,
+h3
+{
+    font-family: 'Roboto Slab', serif!important;
+    font-size: 2em;
+}
+
+p,
+a
+{
+    font-family: 'Hind Siliguri', sans-serif!important;
+    font-size: 1.2em!important;
+}
+
+ol
+{
+    font-family: 'Roboto Slab', serif!important;
+    font-size: 1em;
+}
+
+body
+{
+    background-color: #F7F7F7;
+}
+/*** BURGER ***/
+.hamburger
+{
+    display: none;
+}
+.cross
+{
+    display: none;
+}
+
+/*** HEADER ***/
+.header
+{
+    border-bottom: 3px solid #0d4737;
+}
+.header a
+{
+    font-size: 1em!important;
+}
+.logo
+{
+    width: 10%!important;
+}
+.header_title
+{
+    font-size: 1.5em;
+}
+.header_nav_2 p
+{
+    font-size: 0.8em!important;
+}
+.header_nav_2 ul
+{
+    align-items: center;
+}
+
+.header_nav_2 li:hover
+{
+    background-color: #0d4737; 
+}
+.header_nav_2 li:hover a
+{
+    color: #F7F7F7;
+}
+
+
+/*** FOOTER ***/
+.footer
+{
+    border-top: 3px solid #0d4737;
+}
+
+.bloc_top p
+{
+    font-size: 2em;
+}
+.bloc_bottom p,
+.bloc_bottom a
+{
+    font-size: 1em!important;
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /*** BURGER ***/
+    .hamburger{
+        display: block;
+        background:none;
+        position:absolute;
+        top: 20px;
+        right:20px;
+        line-height:45px;
+        padding:5px 15px 0px 15px;
+        color:#999;
+        border:0;
+        font-size:3em!important;
+        font-weight:bold;
+        cursor:pointer;
+        outline:none;
+        z-index:10000000000000;
+    }
+    .cross{
+        background:none;
+        position:absolute;
+        top:0px;
+        right:0;
+        padding:7px 15px 0px 15px;
+        color:#999;
+        border:0;
+        font-size:3em;
+        line-height:65px;
+        font-weight:bold;
+        cursor:pointer;
+        outline:none;
+        z-index:10000000000000;
+      }
+
+    body
+    {
+        max-width: 100vh;
+    }
+    .container
+    {
+        width: 90%!important;
+    }
+
+    /*** HEADER ***/
+    .header_nav_2
+    {
+        display: none;
+    }
+    .header_nav_1 a
+    {   
+        width: 100%;
+    }
+
+    .logo
+    {
+        width: 30%!important;
+    }
+    /*** FOOTER ***/
+
+    .bloc_top
+    {
+        width: 50%!important;
+    }
+    .bloc_top p
+    {
+        font-size: 2em!important;
+    }
+}
+
+@media (max-width: 768px) {
+ 
+    /*** BURGER ***/
+    .hamburger{
+        display: block;
+        background:none;
+        position:absolute;
+        top: 10px;
+        right:10px;
+        line-height:45px;
+        padding:5px 15px 0px 15px;
+        color:#999;
+        border:0;
+        font-size:2em;
+        font-weight:bold;
+        cursor:pointer;
+        outline:none;
+        z-index:10000000000000;
+    }
+    .cross{
+        background:none;
+        position:absolute;
+        top:0px;
+        right:0;
+        padding:7px 15px 0px 15px;
+        color:#999;
+        border:0;
+        font-size:3em;
+        line-height:65px;
+        font-weight:bold;
+        cursor:pointer;
+        outline:none;
+        z-index:10000000000000;
+      }
+
+    body
+    {
+        max-width: 100vh!important;
+    }
+    .container
+    {
+        width: 90%!important;
+    }
+    /*** HEADER ***/
+    .logo
+    {
+        width: 30%!important;
+    }
+    .header_nav_1 ul
+    {
+        flex-wrap: wrap;
+    }
+    .header_nav_1 ul a
+    {
+        width: 100%;
+    }
+    .header_nav_2
+    {
+        display: none;
+    }
+
+    /*** FOOTER ***/
+
+    .bloc_top
+    {
+        width: 50%!important;
+    }
+    .bloc_bottom p
+    {
+        width: 70%;
+        margin: auto;
+        font-size: 0.7em!important;
+    }
+}

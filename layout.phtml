@@ -1,0 +1,115 @@
+<!--
+font-family: 'Roboto Slab', serif;
+font-family: 'Hind Siliguri', sans-serif;
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="img/fav/logo_carre.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/auto-class.css">
+    
+
+    <!-- CSS EXT -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    
+
+    <!-- JS EXT -->
+    <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="js/burger.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                return false;
+            });
+        });
+    </script>
+
+    <title>The Garden Studio</title>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <!--<div class="header_title w-100 ud-p-20">
+            <h1 class="t-a-center">The Garden Studio</h1>
+        </div>-->
+
+        <div class="t-a-center">
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+            <a href="index.php"><img class="logo w-10 ud-p-20" src="img/logo/logo.png" alt=""></a>
+
+            <nav class="menu header_nav_1 ud-p-20">
+                <ul class="fl-jc-b normal-list">
+                    <a class="normal-link c-green" href="index.php"><li><p class="uppercase">Accueil</p></li></a>
+                    <a class="normal-link c-green" href="about.php"><li><p class="uppercase">Qui suis-je ?</p></li></a>
+                    <a class="normal-link c-green" href="index.php#concept"><li><p class="uppercase">Le Concept</p></li></a>
+                    <a class="normal-link c-green" href="cours.php"><li><p class="uppercase">Les Cours</p></li></a>
+                    <a class="normal-link c-green" href="planning.php"><li><p class="uppercase">Planning / Reservations</p></li></a>
+                    <a class="normal-link c-green" href="tarif.php?w=/products"><li><p class="uppercase">Tarifs</p></li></a>
+                    <a class="normal-link c-green" href="garden-spirit.php"><li><p class="uppercase">Garden's Spirit</p></li></a>
+                    <a class="normal-link c-green" href="galerie.php"><li><p class="uppercase">Galerie</p></li></a>
+                    <a class="normal-link c-green" href="contact.php"><li><p class="uppercase">Contact</p></li></a>
+                </ul>
+            </nav>
+
+            <nav class="header_nav_2">
+                <ul class="fl-jc-a normal-list">
+                    <li class="ud-p-20"><p class="uppercase"><a class="p-40 normal-link c-green" href="index.php">Accueil</a></p></li>
+                    <li class="ud-p-20"><p class="uppercase"><a class="p-40 normal-link c-green" href="about.php">Qui suis-je ?</a></p></li>
+                    <li class="ud-p-20"><p class="uppercase"><a class="p-40 normal-link c-green" href="index.php#concept">Le Concept</a></p></li>
+                    <li class="ud-p-20"><p class="uppercase"><a class="p-40 normal-link c-green" href="cours.php">Les Cours</a></p></li>
+                    <li class="ud-p-20"><p class="uppercase"><a class="p-40 normal-link c-green t-a-center" href="planning.php">Planning / Reservations</a></p></li>
+                    <li class="ud-p-20"><p class="uppercase"><a class="p-40 normal-link c-green" href="tarif.php?w=/products">Tarifs</a></p></li>
+                    <li class="ud-p-20"><p class="uppercase"><a class="p-40 normal-link c-green" href="garden-spirit.php">Garden's Spirit</a></p></li>
+                    <li class="ud-p-20"><p class="uppercase"><a class="p-40 normal-link c-green" href="galerie.php">Galerie</a></p></li>
+                    <li class="ud-p-20"><p class="uppercase"><a class="p-40 normal-link c-green" href="contact.php">Contact</a></p></li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+        
+    </header>
+
+    <main class="main">     
+        <?php include $template.".phtml" ?>
+    </main>
+
+    <footer class="footer">
+
+        <div class="bloc_top w-10 m-auto fl-jc-b ud-p-50">
+            <p><a class="normal-link c-green" href="tel:+33659493721"><i class="fas fa-phone"></i></a></p>
+            <p><a class="normal-link c-green" target="_blank" href="https://instagram.com/thegardenstudio_?utm_source=ig_profile_share&igshid=16r3x4mlwlxy8"><i class="fab fa-instagram"></i></a></p>
+            <p><a class="normal-link c-green" href="mailto:rphlmarchand@gmail.com"><i class="far fa-envelope"></i></a></p>
+        </div>
+
+        <div class="bloc_bottom t-a-center">
+            <p>Site réalisé par <a class="normal-link" href="http://www.jm-marchand.com" target="_blank">Jean-Marie Marchand</a></p>
+        </div>
+    </footer>   
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
